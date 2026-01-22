@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <template>
+            <div class="{{class}}" data-count="{{count}}">
+                <img src="{{imageUrl}}" alt="{{fullName}} image">
+            </div>
+            <p>Posts: <span class="posts" data-count="0">?</span></p>
+        </template>
+        <div class="title">
+            <h1>Rule 34 Guesser</h1>
+            <p>Guess which character has more rule 34 content</p>
+            <p class="mobile">Streak: <span class="streak">0</span> Maximum Streak: <span class="maximum-streak">0</span></p>
+        </div>
+        <div class="images">
+            <div class="image-1">
+                <div class="img-1" data-count=""></div>
+                <p>Posts: <span class="posts" data-count="0">?</span></p>
+            </div>
+            <div class="image-2">
+                <div class="img-2" data-count=""></div>
+                <p>Posts: <span class="posts" data-count="0">?</span></p>
+            </div>
+        </div>
+        <div class="pop-up none">
+            <div>
+                <p>Streak: <span class="streak pop-up-streak">0</span></p>
+                <p>Maximum Streak: <span class="maximum-streak">0</span></p>
+            </div>
+            <button>x</button>
+        </div>
+        <script src="https://unpkg.com/mustache@latest/mustache.min.js"></script>
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>
